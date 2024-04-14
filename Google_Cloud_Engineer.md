@@ -266,10 +266,17 @@ GOOGLE APP ENGINE
 10. Scaling instances
 	- AUTOMATIC
 		- Recommended for continuously running workloads.
-		- Based on 
+		- Based on
 			- CPU utilization threshold.
 			- Throughput threshold.
 			- Max concurrent requests.
 		- Min and max instances can be configured.
 	- BASIC
-		- 
+		- Instances are created as and when requests are received.
+		- Instances are shutdown if zero requests, hence low usage costs.
+		- Recommended for adhoc workloads.
+		- High latency is possible.
+		- Available config max instances and idle timeout.
+	- MANUAL
+		- Cofigure specific amount of instances to run.
+11. 
