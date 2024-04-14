@@ -263,3 +263,13 @@ GOOGLE APP ENGINE
 	- Each version is associated with code and configuration.
 	- Multiple versions can co-exist.
 	- Option to rollback and split traffic.
+10. Scaling instances
+	- AUTOMATIC
+		- Recommended for continuously running workloads.
+		- Based on 
+			- CPU utilization threshold.
+			- Throughput threshold.
+			- Max concurrent requests.
+		- Min and max instances can be configured.
+	- BASIC
+		- 
