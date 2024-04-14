@@ -1,13 +1,13 @@
 ASSOCIATE CLOUD ENGINEER CERTIFICATION STUDY MATERIAL
 
 BEFORE CLOUD
-1. Ahead of time planning
-2. Peak cloud provisioning - Buy infrastructure everytime prior to peak load usage
-3. . High cost of procurement
+1. Ahead of time planning.
+2. Peak cloud provisioning - Buy infrastructure everytime prior to peak load usage.
+3. High cost of procurement.
 
 AFTER CLOUD
-1. Renting resources when needed and releasing back when not in use
-2. Personally, no need to maitain the physical data center
+1. Renting resources when needed and releasing back when not in use.
+2. Personally, no need to maitain the physical data center.
 
 REGIONS AND ZONES
 1. Farther the region higher the latency (Slowness)
@@ -15,13 +15,13 @@ REGIONS AND ZONES
 3. . We can have the sample application hosted on multiple regions to avoid downtime
 4. Regions - Specific geographic location to host the resources
 5. Advantages of Regions
-	- High availability
-	- Low latency
-	- Global footprint (Serve customers residing on different side of the globe)
-	- Adhrerence to Govt regulations (Data stored only in the specific region)
-6. Within region if high availability is requires then Zones can be added
-7. Each Region -> 3 or more Zones -> One or more discrete clusters (physical infra within a data center)
-8. Zones in a region are connected to low latency links (If application is on Z1. and DB is Z2. still low latency can be achieved)
+	- High availability.
+	- Low latency.
+	- Global footprint (Serve customers residing on different side of the globe).
+	- Adherence to Govt regulations (Data stored only in the specific region).
+6. Within region if high availability is requires then Zones can be added.
+7. Each Region -> 3 or more Zones -> One or more discrete clusters (physical infra within a data center).
+8. Zones in a region are connected to low latency links (If application is on Z1. and DB is Z2. still low latency can be achieved).
 ----------------------------------------------------------------------------------------------------------------------------
 
 GCE (GOOGLE COMPUTE ENGINE)
@@ -90,9 +90,9 @@ GCE (GOOGLE COMPUTE ENGINE)
 	- Corporate security standards can be added (Hardening an image)
 	- The disk attached to a running instance is not recommended to create an image as filesystem integrity can't be guaranteed
  - Reducing Costs
-	- Sustained use discounts (SUD): Automatic discounts applied for using resources for a longer period of time (20-50%)
-	- Committed use discounts (CUD): Reserve ahead of time (1. or 3.  years)(70% based on machine type and GPUs)
-	- Preemptible VMs - short duration execution (24hrs), automatically reclaimed by GCP due to system demands
+	- Sustained use discounts (SUD): Automatic discounts applied for using resources for a longer period of time (20-50%).
+	- Committed use discounts (CUD): Reserve ahead of time (1/3 yrs)(70% based on machine type and GPUs).
+	- Preemptible VMs - short duration execution (24hrs), automatically reclaimed by GCP due to system demands.
  - Live Migration & Availability Policy
 	- Running instance is migrated to another host in the same zone
 	- Doesn't change any attributes or properties of the VM
@@ -266,7 +266,7 @@ GOOGLE APP ENGINE
 10. Scaling instances
 	- AUTOMATIC
 		- Recommended for continuously running workloads.
-		- Based on
+		- Based on 
 			- CPU utilization threshold.
 			- Throughput threshold.
 			- Max concurrent requests.
