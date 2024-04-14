@@ -1,4 +1,4 @@
-<!-- ASSOCIATE CLOUD ENGINEER CERTIFICATION -->
+ASSOCIATE CLOUD ENGINEER CERTIFICATION STUDY MATERIAL
 
 BEFORE CLOUD
 1. Ahead of time planning
@@ -20,7 +20,7 @@ REGIONS AND ZONES
 	- Global footprint (Serve customers residing on different side of the globe)
 	- Adhrerence to Govt regulations (Data stored only in the specific region)
 6. Within region if high availability is requires then Zones can be added
-7. Each Region -> 3.  or more Zones -> One or more discrete clusters (physical infra within a data center)
+7. Each Region -> 3 or more Zones -> One or more discrete clusters (physical infra within a data center)
 8. Zones in a region are connected to low latency links (If application is on Z1. and DB is Z2. still low latency can be achieved)
 ----------------------------------------------------------------------------------------------------------------------------
 
@@ -51,9 +51,8 @@ GCE (GOOGLE COMPUTE ENGINE)
 	- Compute Optimized (C2)
 		- Compute intensive workloads
 		- Gaming applications
-
 9. Commands to run on the VM
-	<!-- 
+	-- 
 	sudo su
 	apt update 
 	apt install apache2
@@ -66,8 +65,7 @@ GCE (GOOGLE COMPUTE ENGINE)
 	echo "Hello World from $(hostname) $(hostname -i)"
 	echo "Hello world from $(hostname) $(hostname -i)" > /var/www/html/indexhtml
 	sudo service apache2. start 
-	-->
-
+	--
 10. IP address 
  - VPC Network -> External IP addresses -> Reserve static address
  - VM is created in a specific zone (Regional IP to be set)
