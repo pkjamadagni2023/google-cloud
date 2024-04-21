@@ -63,20 +63,21 @@ GCE (GOOGLE COMPUTE ENGINE)
 	echo $(hostname -i)
 	echo "Hello World from $(hostname)"
 	echo "Hello World from $(hostname) $(hostname -i)"
-	echo "Hello world from $(hostname) $(hostname -i)" > /var/www/html/indexhtml
-	sudo service apache2. start 
+	echo "Hello world from $(hostname) $(hostname -i)" > /var/www/html/index.html
+	echo "Hello world from $(hostname) $(hostname -i)" > /var/www/html/index.html
+	sudo service apache2 start 
 	--
 10. IP address 
- - VPC Network -> External IP addresses -> Reserve static address
- - VM is created in a specific zone (Regional IP to be set)
- - Static
-	- Remains same even if VM is restarted
-	- It remains attached even if VM is stopped
-	- Manual deletion is necessary if not used
-	- Incur costs even when not used, explicit release is needed
-	- It can be switched to another VM instance in the same project 	
- - Ephemeral
-	- Changes everytime VM is restarted
+	 - VPC Network -> External IP addresses -> Reserve static address
+	 - VM is created in a specific zone (Regional IP to be set)
+	 - Static
+		- Remains same even if VM is restarted
+		- It remains attached even if VM is stopped
+		- Manual deletion is necessary if not used
+		- Incur costs even when not used, explicit release is needed
+		- It can be switched to another VM instance in the same project 	
+	 - Ephemeral
+		- Changes everytime VM is restarted
 11. Instance template
 	- Automate VM creation
 	- Select machine type, image, labels, startup script
@@ -279,4 +280,32 @@ GOOGLE APP ENGINE
 		- Available config max instances and idle timeout.
 	- MANUAL
 		- Cofigure specific amount of instances to run.
-11. 
+----------------------------------------------------------------------------------------------------------------------------
+
+KUBERNETES ENGINE (GKE)
+1. Open source container orchestration solution.
+2. Provides
+	- Cluster Management.
+	- Includes Upgrades.
+	- Each cluster can have different VMs.
+3. Kubernetes Features
+	- Auto scaling
+	- Service discovery
+	- Load Balancer
+	- Self healing
+	- Zero downtime deployments
+4. Minimize operations with auto repair (failed nodes) and auto upgrade (K8S).
+5. Pod - Smallest deployable unit.
+6. Node - A physical/virtual machine.
+7. Cluster - Group of multiple nodes. 
+8. Provides Pod & Cluster auto scaling.
+9. Enables cloud logging and monitoring.
+10. Use Container Optimized OS, hardened OS built by Google.
+11. Cluster modes
+	- STANDARD
+		- Manual management.
+		- Pay per node.
+	- AUTOPILOT
+		- Reduces operational costs.
+		- Auto manages the cluster infrastructure.
+		- Pay per pod.
