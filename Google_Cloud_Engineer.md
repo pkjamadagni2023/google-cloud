@@ -7,12 +7,12 @@ BEFORE CLOUD
 
 AFTER CLOUD
 1. Renting resources when needed and releasing back when not in use.
-2. Personally, no need to maitain the physical data center.
+2. No need to maitain the physical data center.
 
 REGIONS AND ZONES
-1. Farther the region higher the latency (Slowness)
-2. If data center crashes -> Low availability
-3. . We can have the sample application hosted on multiple regions to avoid downtime
+1. Farther the region higher the latency (Slowness).
+2. If data center crashes -> Low availability.
+3. We can have the same application hosted on multiple regions to avoid downtime.
 4. Regions - Specific geographic location to host the resources
 5. Advantages of Regions
 	- High availability.
@@ -25,13 +25,13 @@ REGIONS AND ZONES
 ----------------------------------------------------------------------------------------------------------------------------
 
 GCE (GOOGLE COMPUTE ENGINE)
-1. To deploy applications on the cloud -> rent virtual servers (VM) on GCP -> GCE 
-2. To provision and manage VMs
-3. Load balancing and auto scaling
-4. Horizontal scaling refers to adding additional nodes 
-   *Vertical scaling describes adding more power to your current machines
-5. Attach storage & network storage
-6. Manage NW connectivity and configuration to VM instances
+1. To deploy applications on the cloud -> rent virtual servers (VM) on GCP -> GCE.
+2. To provision and manage VMs.
+3. Load balancing and auto scaling.
+4. Horizontal scaling refers to adding additional nodes.
+   Vertical scaling describes adding more power to your current machines.
+5. Attach storage & network storage.
+6. Manage NW connectivity and configuration to VM instances.
 7. Create a VM
 	- Name
 	- Labels
@@ -309,3 +309,25 @@ KUBERNETES ENGINE (GKE)
 		- Reduces operational costs.
 		- Auto manages the cluster infrastructure.
 		- Pay per pod.
+----------------------------------------------------------------------------------------------------------------------------
+
+GOOGLE CLOUD FUNCTIONS & CLOUD RUN
+1. Execute code when an event happens when
+	- File uploaded to GCS
+	- An error log written to cloud logging
+	- A msg received by pub sub
+	- A http/https invocation is received
+2. Supports auto scaling, availability
+3. Pay by usage
+	- No. of invocations
+	- Compute time of the invocations
+	- Memory & CPU provisioned
+4. CFs are time bound - default timeout 1 min to max 60 mins (3600s)
+5. Two versions
+	- First Gen
+	- Second Gen: Built on top of cloud run & eventarc
+6. Event, Trigger (Function call), Functions (Take event data and perform action)
+7. Cloud Build API to be enabled to deploy CFs.
+8. Cloud run
+	- Container to production in seconds.
+	- 
